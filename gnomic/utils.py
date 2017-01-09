@@ -37,7 +37,7 @@ def genotype_to_text(genotype, delta_char=u"\u0394"):
         elif change_type is Plasmid:
             result.append(feature_to_text(change, integrated=False))
 
-        if change.marker:
+        if change.markers:
             result.append(feature_to_text(change, is_maker=True))
 
         result_string = ""
