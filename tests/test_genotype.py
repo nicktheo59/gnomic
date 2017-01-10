@@ -245,8 +245,8 @@ class GenotypeToTextTestCase(BaseTestCase):
                          u"\u0394geneA")
 
     def test_added_and_removed_features(self):
-        self.assertEqual(genotype_to_text(self.chain('-geneB', '+geneA')),
-                         u"\u0394geneB geneA")
+        self.assertEqual(genotype_to_text(self.chain('-geneB')),
+                         u"\u0394geneB")
 
     def test_plasmid(self):
         self.assertEqual(genotype_to_text(self.chain('siteA>pA{}')),
